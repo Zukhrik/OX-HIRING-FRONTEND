@@ -6,7 +6,7 @@ import {NotFoundPage} from './view/not-found-page'
 import {useStore} from 'effector-react'
 import {$appModel} from './models/app'
 import {LoginPage} from './view/auth'
-import {SearchPage} from './view/filter'
+import {FilterPage} from './view/filter'
 
 function App() {
   const {$app: {token}} = useStore($appModel)
@@ -14,7 +14,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={!!token ? <HomePage/> : <LoginPage/>}/>
-      <Route path='/filter' element={<SearchPage/>}/>
+      <Route path='/filter' element={<FilterPage/>}/>
       <Route path='*' element={<NotFoundPage/>}/>
     </Routes>
   )

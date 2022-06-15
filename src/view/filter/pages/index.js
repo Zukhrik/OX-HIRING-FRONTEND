@@ -1,1 +1,1 @@
-export {SearchPage} from './search-page'
+export {FilterPage} from './filter-page'

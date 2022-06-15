@@ -31,7 +31,9 @@ export const HomePage = () => {
           <Title level={3}>Product List</Title>
         </Col>
         <Col>
-          <Button onClick={() => navigate('/filter')} size='large' color='primary'>Search</Button>
+          <Button onClick={() => navigate('/filter')} size='large' color='primary' type='link'>
+            Filter page
+          </Button>
         </Col>
       </Row>
       <Table
